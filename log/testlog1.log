@@ -196,3 +196,7 @@
 2023-10-06 10:46:23,771 [main] INFO ebanking - Entered UserName
 2023-10-06 10:46:24,000 [main] INFO ebanking - Entered  Password
 2023-10-06 10:46:25,284 [main] INFO ebanking - login Test Passed
+2023-10-08 21:55:56,427 [main] INFO ebanking - URL is Open
+2023-10-08 21:55:56,582 [main] INFO ebanking - Entered UserName
+2023-10-08 21:55:56,742 [main] INFO ebanking - Entered  Password
+2023-10-08 21:55:58,135 [main] INFO ebanking - login Test Passed
