@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [InetBankingv1]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="ie"/>
-  <listeners>
-    <listener class-name="com.inetbanking.utilities.Reporting"/>
-  </listeners>
-  <test name="BankingApp Test">
-    <parameter name="browser" value="ie"/>
-    <classes>
-      <class name="com.inetbanking.testCases.TC_loginTest_001"/>
-    </classes>
-  </test> <!-- BankingApp Test -->
-  <test name="BankingApp Test(failed)">
-    <parameter name="browser" value="ie"/>
+<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test" verbose="2">
     <classes>
       <class name="com.inetbanking.testCases.TC_loginTest_001">
         <methods>
-          <include name="setup"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.inetbanking.testCases.TC_loginTest_001 -->
     </classes>
-  </test> <!-- BankingApp Test(failed) -->
-</suite> <!-- Failed suite [InetBankingv1] -->
+  </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.inetbanking.testCases.TC_loginTest_001">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.inetbanking.testCases.TC_loginTest_001 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

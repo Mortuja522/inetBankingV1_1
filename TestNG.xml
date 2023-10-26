@@ -7,13 +7,20 @@
 		  <listener class-name="com.inetbanking.utilities.Reporting"></listener>	 
 	</listeners>
 	
-	<test name="BankingApp Test" >
+	<test name="BankingApp Test" enabled= "false">
+	<parameter name="browser" value="chrome" />
+		<classes  >
+		      <class name="com.inetbanking.testCases.TC_loginTest_001" />   
+		       
+		</classes>
+		
+	</test>
+	
+	<test name="BankingApp Test" enabled="true">
 	<parameter name="browser" value="chrome" />
 		<classes>
-		      <class name="com.inetbanking.testCases.TC_loginTest_001"></class>
-		    <!--   <class name="com.inetbanking.testCases.TC_LoginDDT_002"></class>
-		     <class name="com.inetbanking.testCases.TC_AddCustomerTest_003"></class> -->
-		       
+		      <!-- <class name="com.inetbanking.testCases.TC_LoginDDT_002" /> -->
+		     <class name="com.inetbanking.testCases.TC_AddCustomerTest_003"/>     
 		</classes>
 		
 	</test>

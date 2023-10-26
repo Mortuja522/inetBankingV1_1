@@ -8,7 +8,7 @@
   <test name="BankingApp Test">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.inetbanking.testCases.TC_loginTest_001"/>
+      <class name="com.inetbanking.testCases.TC_AddCustomerTest_003"/>
     </classes>
   </test> <!-- BankingApp Test -->
 </suite> <!-- Failed suite [InetBankingv1] -->

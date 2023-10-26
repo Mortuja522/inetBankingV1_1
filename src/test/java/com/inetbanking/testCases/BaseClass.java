@@ -33,16 +33,14 @@ public class BaseClass {
 	public String username= readconfig.getUsername();
 	public String password= readconfig.getPassword();
 	public static WebDriver driver;
-	
-	
 	public static Logger logger;
 	
 	
 	@BeforeClass
 	@Parameters("browser")
-	public void setup(String br) 
+	public void setup(String br) throws InterruptedException 
 	{
-	    logger = Logger.getLogger("ebanking");
+	        logger = Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("log4j.properties");
 		
 		if(br.equals("chrome"))
@@ -52,7 +50,8 @@ public class BaseClass {
 		ChromeOptions opt = new ChromeOptions();
 		opt.addExtensions(new File("./Extensions/AdBlock.crx"));
 		driver = new ChromeDriver(opt);
-		
+		Thread.sleep(6000);
+		driver.switchTo().window(driver.getWindowHandles().toArray()[0].toString());
 		}
 	
 		else if(br.equals("ie"))
