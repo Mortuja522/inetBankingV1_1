@@ -2,22 +2,22 @@
 <testng-results total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T16:40:54Z" name="Default suite" finished-at="2023-10-19T16:40:54Z" duration-ms="54">
+  <suite started-at="2023-11-04T07:19:54Z" name="Default suite" finished-at="2023-11-04T07:19:54Z" duration-ms="58">
     <groups>
     </groups>
-    <test started-at="2023-10-19T16:40:54Z" name="Default test" finished-at="2023-10-19T16:40:54Z" duration-ms="54">
-      <class name="com.inetbanking.testCases.TC_loginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_loginTest_001@1339e7aa]" started-at="2023-10-19T22:40:54Z" name="setup" finished-at="2023-10-19T22:40:54Z" duration-ms="0" status="FAIL">
+    <test started-at="2023-11-04T07:19:54Z" name="Default test" finished-at="2023-11-04T07:19:54Z" duration-ms="58">
+      <class name="com.inetbanking.testCases.TC_EditCustomerTest_004">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_EditCustomerTest_004@6c4980d3]" started-at="2023-11-04T13:19:54Z" name="setup" finished-at="2023-11-04T13:19:54Z" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-890224719\testng-customsuite.xml]]>
+in C:\Users\HP\AppData\Local\Temp\testng-eclipse-271167293\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by @Configuration on method setup but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-890224719\testng-customsuite.xml
+in C:\Users\HP\AppData\Local\Temp\testng-eclipse-271167293\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
@@ -45,15 +45,15 @@ in C:\Users\HP\AppData\Local\Temp\testng-eclipse-890224719\testng-customsuite.xm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetbanking.testCases.TC_loginTest_001@1339e7aa]" started-at="2023-10-19T22:40:54Z" name="loginTest" finished-at="2023-10-19T22:40:54Z" duration-ms="11" status="SKIP">
+        <test-method signature="editCustomer()[pri:0, instance:com.inetbanking.testCases.TC_EditCustomerTest_004@6c4980d3]" started-at="2023-11-04T13:19:54Z" name="editCustomer" finished-at="2023-11-04T13:19:54Z" duration-ms="11" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_loginTest_001@1339e7aa]" started-at="2023-10-19T22:40:54Z" name="tearDown" finished-at="2023-10-19T22:40:54Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- editCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_EditCustomerTest_004@6c4980d3]" started-at="2023-11-04T13:19:54Z" name="tearDown" finished-at="2023-11-04T13:19:54Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetbanking.testCases.TC_loginTest_001 -->
+      </class> <!-- com.inetbanking.testCases.TC_EditCustomerTest_004 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

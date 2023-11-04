@@ -36,6 +36,7 @@ public class BaseClass {
 	public static Logger logger;
 	
 	
+	
 	@BeforeClass
 	@Parameters("browser")
 	public void setup(String br) throws InterruptedException 
@@ -45,11 +46,13 @@ public class BaseClass {
 		
 		if(br.equals("chrome"))
 		{
+		    
 		System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
 		
 		ChromeOptions opt = new ChromeOptions();
 		opt.addExtensions(new File("./Extensions/AdBlock.crx"));
 		driver = new ChromeDriver(opt);
+		driver.manage().window().maximize();
 		Thread.sleep(6000);
 		driver.switchTo().window(driver.getWindowHandles().toArray()[0].toString());
 		}
@@ -57,13 +60,16 @@ public class BaseClass {
 		else if(br.equals("ie"))
 		{
 			System.setProperty("webdriver.ie.driver",readconfig.getIEpath());
-			 driver = new InternetExplorerDriver();
+			driver = new InternetExplorerDriver();
+			driver.manage().window().maximize();
 		}
+		
 		
 		else if(br.equals("gecko"))
 		{
 			System.setProperty("webdriver.gecko.driver",readconfig.getGeckoPath());
 			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
 			
 
 		}
