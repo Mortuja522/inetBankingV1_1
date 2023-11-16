@@ -28,18 +28,26 @@ public class TC_EditCustomerTest_004 extends BaseClass{
 	logger.info("Providing the customer Id....");
 	editcust.ClickEditCustomer();
 	
-	editcust.CustomerId("74513");
+	editcust.CustomerId("31994");
 	editcust.custAccSubmit();
 	Thread.sleep(3000);
 	
 	logger.info("Providing the update customer Information....");
 	editcust.custAddress("update Dhaka");
 	Thread.sleep(3000);
-	editcust.custCity(" update Tikatuli");
+	editcust.custCity("updateTikatuli");
 	Thread.sleep(3000);
 	editcust.custState("Dhaka");
 	editcust.custSubmit();
 	Thread.sleep(3000);
+	driver.switchTo().alert().accept();
+	Thread.sleep(3000);
+	
+	logger.info("Alart  accept");
+	driver.switchTo().alert().accept();
+	Thread.sleep(3000);
+	
+	
 	
     }
     

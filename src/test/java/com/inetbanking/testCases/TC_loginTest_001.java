@@ -12,7 +12,7 @@ import com.inetbanking.pageObjects.LoginPage;
 public class TC_loginTest_001 extends BaseClass 
 {
 
-	
+
 	@Test
 	public void loginTest() throws IOException {
 		
